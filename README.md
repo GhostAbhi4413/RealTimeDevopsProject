@@ -1,62 +1,78 @@
-**Note:** This project is a fork of `opentelemetry-demo`. Thanks to the team and contributors for opensourcing this wonderful demo project. Definitely one of the best on internet.
+<!-- Header -->
+<div align="center">
+  <img src="https://opentelemetry.io/img/logos/opentelemetry-logo-nav.png" alt="OpenTelemetry" width="64" />
+  <h1>OpenTelemetry Demo – Astronomy Shop</h1>
 
-<!-- markdownlint-disable-next-line -->
-# <img src="https://opentelemetry.io/img/logos/opentelemetry-logo-nav.png" alt="OTel logo" width="45"> OpenTelemetry Demo
+  <!-- Badges -->
+  <p>
+    <a href="https://cloud-native.slack.com/archives/C03B4CWV4DA">
+      <img alt="Slack" src="https://img.shields.io/badge/slack-@cncf/otel/demo-brightgreen.svg?logo=slack">
+    </a>
+    <a href="https://github.com/open-telemetry/opentelemetry-demo/releases">
+      <img alt="Version" src="https://img.shields.io/github/v/release/open-telemetry/opentelemetry-demo?color=blueviolet">
+    </a>
+    <a href="https://github.com/open-telemetry/opentelemetry-demo/graphs/commit-activity">
+      <img alt="Commits since latest" src="https://img.shields.io/github/commits-since/open-telemetry/opentelemetry-demo/latest?color=ff69b4&include_prereleases">
+    </a>
+    <a href="https://hub.docker.com/r/otel/demo">
+      <img alt="Docker pulls" src="https://img.shields.io/docker/pulls/otel/demo">
+    </a>
+    <a href="https://github.com/open-telemetry/opentelemetry-demo/blob/main/LICENSE">
+      <img alt="License" src="https://img.shields.io/badge/License-Apache_2.0-blue.svg?color=red">
+    </a>
+    <a href="https://github.com/open-telemetry/opentelemetry-demo/actions/workflows/run-integration-tests.yml">
+      <img alt="Integration Tests" src="https://github.com/open-telemetry/opentelemetry-demo/actions/workflows/run-integration-tests.yml/badge.svg">
+    </a>
+    <a href="https://artifacthub.io/packages/helm/opentelemetry-helm/opentelemetry-demo">
+      <img alt="Artifact Hub" src="https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/opentelemetry-demo">
+    </a>
+    <a href="https://www.bestpractices.dev/en/projects/9247">
+      <img alt="OpenSSF Best Practices" src="https://www.bestpractices.dev/projects/9247/badge">
+    </a>
+  </p>
 
-[![Slack](https://img.shields.io/badge/slack-@cncf/otel/demo-brightgreen.svg?logo=slack)](https://cloud-native.slack.com/archives/C03B4CWV4DA)
-[![Version](https://img.shields.io/github/v/release/open-telemetry/opentelemetry-demo?color=blueviolet)](https://github.com/open-telemetry/opentelemetry-demo/releases)
-[![Commits](https://img.shields.io/github/commits-since/open-telemetry/opentelemetry-demo/latest?color=ff69b4&include_prereleases)](https://github.com/open-telemetry/opentelemetry-demo/graphs/commit-activity)
-[![Downloads](https://img.shields.io/docker/pulls/otel/demo)](https://hub.docker.com/r/otel/demo)
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg?color=red)](https://github.com/open-telemetry/opentelemetry-demo/blob/main/LICENSE)
-[![Integration Tests](https://github.com/open-telemetry/opentelemetry-demo/actions/workflows/run-integration-tests.yml/badge.svg)](https://github.com/open-telemetry/opentelemetry-demo/actions/workflows/run-integration-tests.yml)
-[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/opentelemetry-demo)](https://artifacthub.io/packages/helm/opentelemetry-helm/opentelemetry-demo)
-[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/9247/badge)](https://www.bestpractices.dev/en/projects/9247)
+  <p><em>
+    Note: This repository is a fork of <code>open-telemetry/opentelemetry-demo</code>.  
+    Big thanks to all contributors for open-sourcing this excellent demo.
+  </em></p>
+</div>
 
-## Welcome to the OpenTelemetry Astronomy Shop Demo
+---
 
-This repository contains the OpenTelemetry Astronomy Shop, a microservice-based
-distributed system intended to illustrate the implementation of OpenTelemetry in
-a near real-world environment.
+## Overview
 
-Our goals are threefold:
+The **OpenTelemetry Astronomy Shop** is a microservices application designed to showcase end-to-end **OpenTelemetry** instrumentation in a near real-world system.
 
-- Provide a realistic example of a distributed system that can be used to
-  demonstrate OpenTelemetry instrumentation and observability.
-- Build a base for vendors, tooling authors, and others to extend and
-  demonstrate their OpenTelemetry integrations.
-- Create a living example for OpenTelemetry contributors to use for testing new
-  versions of the API, SDK, and other components or enhancements.
+**Goals:**
+- Provide a realistic, multi-language distributed app to demonstrate instrumentation & observability.
+- Serve as a base for vendors/tooling authors to extend and integrate OTel.
+- Offer a living example for contributors to test changes to the API/SDK/components.
 
-We've already made [huge
-progress](https://github.com/open-telemetry/opentelemetry-demo/blob/main/CHANGELOG.md),
-and development is ongoing. We hope to represent the full feature set of
-OpenTelemetry across its languages in the future.
+See the ongoing progress in the project’s [CHANGELOG](https://github.com/open-telemetry/opentelemetry-demo/blob/main/CHANGELOG.md).
 
-If you'd like to help (**which we would love**), check out our [contributing
-guidance](./CONTRIBUTING.md).
+---
 
-If you'd like to extend this demo or maintain a fork of it, read our
-[fork guidance](https://opentelemetry.io/docs/demo/forking/).
+## Quick Start
 
-## Quick start
+Choose your preferred deployment method:
 
-You can be up and running with the demo in a few minutes. Check out the docs for
-your preferred deployment method:
+- **Docker Compose** → https://opentelemetry.io/docs/demo/docker_deployment/  
+- **Kubernetes (Helm/Manifests)** → https://opentelemetry.io/docs/demo/kubernetes_deployment/
 
-- [Docker](https://opentelemetry.io/docs/demo/docker_deployment/)
-- [Kubernetes](https://opentelemetry.io/docs/demo/kubernetes_deployment/)
+> Use the links above for the most up-to-date instructions.
+
+---
 
 ## Documentation
 
-For detailed documentation, see [Demo Documentation][docs]. If you're curious
-about a specific feature, the [docs landing page][docs] can point you in the
-right direction.
+For full documentation, start here: **[Demo Documentation][docs]**.  
+If you’re looking for a specific feature, the docs landing page will guide you.
 
-## Demos featuring the Astronomy Shop
+---
 
-We welcome any vendor to fork the project to demonstrate their services and
-adding a link below. The community is committed to maintaining the project and
-keeping it up to date for you.
+## Demos Featuring the Astronomy Shop
+
+Vendors extending or integrating this demo:
 
 |                           |                |                                  |
 |---------------------------|----------------|----------------------------------|
@@ -71,45 +87,42 @@ keeping it up to date for you.
 | [Datadog]                 | [Logz.io]      | [Uptrace]                        |
 | [Dynatrace]               | [New Relic]    |                                  |
 
+---
+
 ## Contributing
 
-To get involved with the project see our [CONTRIBUTING](CONTRIBUTING.md)
-documentation. Our [SIG Calls](CONTRIBUTING.md#join-a-sig-call) are every other
-Monday at 8:30 AM PST and anyone is welcome.
+- Read the project’s **[CONTRIBUTING](CONTRIBUTING.md)** guide.  
+- Join the **SIG calls** every other Monday at **8:30 AM PST** (details in CONTRIBUTING).
 
-## Project leadership
+---
 
-[Maintainers](https://github.com/open-telemetry/community/blob/main/guides/contributor/membership.md#maintainer)
-([@open-telemetry/demo-maintainers](https://github.com/orgs/open-telemetry/teams/demo-maintainers)):
+## Project Leadership
 
-- [Juliano Costa](https://github.com/julianocosta89), Datadog
-- [Mikko Viitanen](https://github.com/mviitane), Dynatrace
+**Maintainers** ([@open-telemetry/demo-maintainers](https://github.com/orgs/open-telemetry/teams/demo-maintainers)):  
+- [Juliano Costa](https://github.com/julianocosta89), Datadog  
+- [Mikko Viitanen](https://github.com/mviitane), Dynatrace  
 - [Pierre Tessier](https://github.com/puckpuck), Honeycomb
 
-[Approvers](https://github.com/open-telemetry/community/blob/main/guides/contributor/membership.md#approver)
-([@open-telemetry/demo-approvers](https://github.com/orgs/open-telemetry/teams/demo-approvers)):
-
-- [Cedric Ziel](https://github.com/cedricziel) Grafana Labs
-- [Penghan Wang](https://github.com/wph95), AppDynamics
-- [Reiley Yang](https://github.com/reyang), Microsoft
-- [Roger Coll](https://github.com/rogercoll), Elastic
+**Approvers** ([@open-telemetry/demo-approvers](https://github.com/orgs/open-telemetry/teams/demo-approvers)):  
+- [Cedric Ziel](https://github.com/cedricziel), Grafana Labs  
+- [Penghan Wang](https://github.com/wph95), AppDynamics  
+- [Reiley Yang](https://github.com/reyang), Microsoft  
+- [Roger Coll](https://github.com/rogercoll), Elastic  
 - [Ziqi Zhao](https://github.com/fatsheep9146), Alibaba
 
-Emeritus:
+**Emeritus:**  
+[Austin Parker](https://github.com/austinlparker) · [Carter Socha](https://github.com/cartersocha) · [Michael Maxwell](https://github.com/mic-max) · [Morgan McLean](https://github.com/mtwo)
 
-- [Austin Parker](https://github.com/austinlparker)
-- [Carter Socha](https://github.com/cartersocha)
-- [Michael Maxwell](https://github.com/mic-max)
-- [Morgan McLean](https://github.com/mtwo)
+---
 
-### Thanks to all the people who have contributed
+## Acknowledgements
 
+Thanks to all contributors:  
 [![contributors](https://contributors-img.web.app/image?repo=open-telemetry/opentelemetry-demo)](https://github.com/open-telemetry/opentelemetry-demo/graphs/contributors)
 
 [docs]: https://opentelemetry.io/docs/demo/
 
 <!-- Links for Demos featuring the Astronomy Shop section -->
-
 [AlibabaCloud LogService]: https://github.com/aliyun-sls/opentelemetry-demo
 [AppDynamics]: https://www.appdynamics.com/blog/cloud/how-to-observe-opentelemetry-demo-app-in-appdynamics-cloud/
 [Aspecto]: https://github.com/aspecto-io/opentelemetry-demo
@@ -139,6 +152,3 @@ Emeritus:
 [Teletrace]: https://github.com/teletrace/opentelemetry-demo
 [Tracetest]: https://github.com/kubeshop/opentelemetry-demo
 [Uptrace]: https://github.com/uptrace/uptrace/tree/master/example/opentelemetry-demo
-#   R e a l T i m e D e v o p s P r o j e c t 
- 
- 
